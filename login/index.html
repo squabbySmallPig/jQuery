@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../common.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<script src="../jquery-1.9.1.js"></script>
+		<script src="index.js"></script>
+		<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+	</head>
+	<body>
+		
+		
+		<div class="login-header">
+			<div class="content">
+				<a class="logo" href="../index.html"><img src="../img/1.gif"/></a>
+				<div class="right">
+					<img src="../img/167.gif"/>
+					<span>您好，欢迎来到央广购物</span><br />
+					<span>已注册的会员请登录，或立即</span><a href="../register/index.html">注册新会员</a>
+				</div>
+			</div>
+		</div>
+		<div class="login-main">
+			<div class="content">
+				<div class="login">
+					<div class="text1">
+						<a class="active" id="moren" href="javascript:;">用户登录<span class="iconfont">&#xe67d;</span></a><a id="shouji"  href="javascript:;">手机动态码登录<span class="iconfont">&#xe67d;</span></a>
+					</div>
+					<form id="loginForm">
+		                <dl class="no">
+		               		<dt>账&nbsp;&nbsp;&nbsp;号：</dt>
+		                	<dd>
+		                  	<input type="text" id="loginName" autocomplete="off" placeholder="输入用户名"><span id="loginNameSpan"><i class="iconfont" style="color: orangered;">&#xe602;</i> 请填写正确的账号</span>
+		                	</dd>
+		              	</dl>
+		              	<dl class="no">
+		                	<dt>密&nbsp;&nbsp;&nbsp;码：</dt>
+		                	<dd>
+		                  		<input type="password" class="text" id="password" placeholder="输入账户密码" autocomplete="off"><span id="passwordSpan"><i class="iconfont" style="color: orangered;">&#xe602;</i> 请填写正确的密码</span>
+		                	</dd>
+		              	</dl>
+		                <dl class="codebox">
+		                  	<dt>验证码：</dt>
+		                  	<dd>
+		                    	<input id="code"type="text" placeholder="输入验证码" autocomplete="off"><span id="codeSpan"><i class="iconfont" style="color: orangered;">&#xe602;</i></span>
+		                  	</dd>
+		                	<div id="kbq">
+		                		<img class="codeimg" src="../img/code.jpg" ><a class="kbq" href="JavaScript:;">看不清，换一张</a>
+		                	</div>
+		                </dl>
+		                <div class="mian">
+		                	<input type="checkbox"id="autoLogin">七天自动登录<em>请勿在公用电脑上使用</em><a href="javascript:;">忘记密码</a>
+		                </div>
+		            	<a style="display: inline-block;" id="loginbtn">登录</a>
+		            </form>
+		            
+		            
+		            
+		            <form id="loginForm1">
+		                <dl class="no">
+		               		<dt>手&nbsp;机&nbsp;号&nbsp;：</dt>
+		                	<dd>
+		                  	<input type="text" id="loginName1" autocomplete="off" placeholder="可填写已注册的手机号"><span id="loginNameSpan1"><i class="iconfont" style="color: orangered;">&#xe602;</i> 请输入正确手机号</span>
+		                	</dd>
+		              	</dl>
+		                <dl class="codebox">
+		                  	<dt>验&nbsp;证&nbsp;码&nbsp;：</dt>
+		                  	<dd>
+		                    	<input id="code1"type="text" placeholder="输入验证码" autocomplete="off"><span id="passwordSpan1"><i class="iconfont" style="color: orangered;">&#xe602;</i></span>
+		                  	</dd>
+		                	<div id="kbq1">
+		                		<img class="codeimg" src="../img/167.jpg" ><a class="kbq" href="JavaScript:;">看不清，换一张</a>
+		                	</div>
+		                </dl>
+		                <span class="dx">正确输入上方验证码后，点击<a href="javascript:;">发送短信动态码</a>，查收短信将系统发送的“6位短信动态码”输入到下方验证后登录。</span>
+		                <dl>
+		                	<dt>动&nbsp;态&nbsp;码&nbsp;：</dt>
+		                	<dd>
+		                  		<input type="password" class="text" id="password1" placeholder="输入6位手机动态码" autocomplete="off"><span id="codeSpan1"><i class="iconfont" style="color: orangered;">&#xe602;</i> 动态码不正确</span>
+		                	</dd>
+		              	</dl>
+		            	<button id="loginbtn1">登录</button>
+		            </form>
+		            
+	            	<p>使用合作网站账号登录：</p>
+	            	<a class="wx" href="javascript:;"><i style="font-size: 18px;" class="iconfont">&#xe68b;</i>&nbsp;微信</a>
+				<div class="login-sanjiao"></div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="footer">
+			<div class="content">
+				<ul class="u1">
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">招商合作</a></li>
+					<li><a href="javascript:;">关于央广购物</a></li>
+					<li><a href="javascript:;">联系我们</a></li>
+					<li><a href="javascript:;">成为供应商</a></li>
+					<li><a href="javascript:;">招贤纳士</a></li>
+				</ul>
+				<ul class="u2">
+					<li><a href="javascript:;">京公网安备：11011502002190</a></li>
+					<li><a href="javascript:;">京ICP备10038858号</a></li>
+					<li><a href="javascript:;">食品流通许可证编号：SP1101151210063489</a></li>
+					<li><a href="javascript:;">信息网络传播视听节目许可证 0102002号</a></li>
+				</ul>
+				<p>Copyright©2010-2017 cnrmall.com All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务热线：4008-518-518</p><br />
+				<p><img src="../img/122.png" style="cursor: pointer;"/></p>
+			</div>
+		</div>
+	</body>
+</html>

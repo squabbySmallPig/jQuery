@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../common.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<script src="../jquery-1.9.1.js"></script>
+		<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+		<script type="text/javascript" src="area.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="content">
+				<div class="login"><a href="javascript:;">欢迎来到央广!</a> <a href="../index.html">&nbsp;&nbsp;[退出]&nbsp;&nbsp;</a></div>
+				<dl class="order">
+		        	<dt><a href="javascript:;">我的订单&nbsp;<i class="iconfont">&#xe6c8;</i></a></dt>
+		            <dd><a href="javascript:;">待付款订单</a></dd>
+		            <dd><a href="javascript:;">待确认收货</a></dd>
+		            <dd><a href="javascript:;">待评价交易</a></dd>
+		       </dl>
+		       <dl class="service">
+		        	<dt><a href="javascript:;">客户服务&nbsp;<i class="iconfont">&#xe6c8;</i></a></dt>
+		            <dd><a href="javascript:;">购物指南</a></dd>
+		            <dd><a href="javascript:;">售后服务</a></dd>
+		            <dd><a href="javascript:;">商家服务</a></dd>
+		       </dl>
+		       <dl class="collect">
+		        	<dt><a href="javascript:;">我的收藏&nbsp;<i class="iconfont">&#xe6c8;</i></a></dt>
+		            <dd><a href="javascript:;">商品收藏</a></dd>
+		            <dd><a href="javascript:;">店铺收藏</a></dd>
+		       </dl>
+			</div>
+		</div>
+		<div class="cart-header">
+			<div class="content">
+				<div class="logo"><a href="../index.html"><img src="../img/1.gif"/></a></div>
+				<ul class="progress">
+					<li>
+						<i class="step1"></i>
+					    <div class="hr"></div>
+					    <p>我的购物车</p>
+					    <span></span>
+					</li>
+					<li>
+						<i class="step2"></i>
+					    <div class="hr"></div>
+					    <p>确认订单/结算</p>
+					    <span></span>
+					</li>
+					<li>
+						<i class="step3"></i>
+					    <div class="hr"></div>
+					    <p>生成订单/支付</p>
+					    <span></span>
+					</li>
+					<li>
+						<i class="step4"></i>
+					    <div class="hr"></div>
+					    <p>完成支付/等待出货</p>
+					    <span></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="payMain">
+			<div class="content">
+				<div class="pmain1">
+					<p class="p1">确认订单</p>
+					<p class="p2">请仔细核对填写收货、发票等信息，以确保物流快递及时准确投递。</p>
+				</div>
+				<div class="pmain2">
+					<ul>
+						<li class="li">
+							<p class="p1">收货人信息<a href="javascript:;" class="newAdd">[新增收货地址]</a><a href="javascript:;" class="newChange">[修改]</a></p>
+							<div class="address">
+								<input type="radio" name="changeAddress" />
+								<span class="span3">成吉思汗</span>
+								<span class="span1">上海</span> 
+								<span class="span4">上海市</span>
+								<span class="span5">闵行区 </span>
+								<span class="span6">浦江镇 正义村5组</span>
+								<i class="iconfont">&#xe625;</i>
+								<span class="span2">18753263122</span>
+								<a href="javascript:;" class="change">[编辑]</a>
+								<a href="javascript:;" class="del">[删除]</a>
+								<p class="control">保存收货人信息</p>
+							</div>
+						</li>
+					</ul>
+					<div class="pay">
+						<h4>支付方式<a href="javascript:;" id="payChange">[修改]</a></h4>
+						<p class="chance">在线支付</p>
+						<div class="d1">
+							<input type="radio" name="chances" checked="checked"  id="inputB"/><span class="span1">在线支付</span>
+						</div>
+						<div class="d2">
+							<input type="radio" name="chances" id="inputA" /><span class="span1">货到付款</span>
+						</div>
+						<div class="baocun">支付方式</div>
+					</div>
+				</div>
+				<div class="cart-main">
+					<p class="pmain3Head">确认订单</p>
+					<ul class="cart-list-head" style="background: #e2e2e2;">
+						<li>商品</li>
+						<li>数量</li>
+						<li>单价（元）</li>
+						<li>金额（元）</li>
+					</ul>
+					<ul class="cart-list"></ul>
+					<div class="bottomPay">
+						<p class="p1"><span class="span1">购买商品种类：</span><span class="span2"style="font-weight: bold; color: red;">0</span><span class="span3">&nbsp;&nbsp;种</span><span class="span4">数量总计：</span><span style="font-weight: bold; color: red;" class="span5">0</span><span class="span6">&nbsp;&nbsp;件</span></p>
+						<div class="bottomPayLast">
+							<p class="p2"><span class="span7">运费总计：</span><span class="span8">0.00</span><span class="span9"> 元</span></p>
+							<p class="p3"><span class="span10">商品金额总计：</span><span class="span11">0.00</span><span class="span12"> 元</span></p>
+							<p class="p4"><span class="span13">应付金额总计：</span><span class="span14">0.00</span><span class="span15"> 元</span></p>
+							<p class="p5"><a id="goBefore" href="../goods-cart/index.html">返回上一页</a><a id="userMenu" href="javascript:;">提交订单</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<div id="payAlert">
+			<p class="p1">订单提交成功！</p>
+			<p class="top">
+				<span>请在</span>
+				<span style="color: red;" id="hour">11</span>
+				<span>小时</span>
+				<span style="color: red;" id="minute">11</span>
+				<span>分钟</span>
+				<span style="color: red;" id="seconds">11</span>
+				<span>秒前付款</span>
+			</p>
+			<p class="bottom"><a href="../index.html">返回首页</a><a href="javascript:;">立即付款</a></p>
+			<a id="guanbi" href="javascript:;">×</a>
+		</div>
+		
+		<div id="bigChange">
+			<h4>新增地址<a href="javascript:;" id="bigChangeOut">×</a></h4>
+			<dl>
+				<dt><span style="color: red; font-size: 20px; line-height: 28px;position: relative;top: 6px;">*</span>收货人：</dt>
+				<dd><input id="zsxm" class="input" type="text" placeholder="请填写您的真实姓名" /></dd>
+			</dl>
+			<dl>
+				<dt><span style="color: red; font-size: 20px; line-height: 28px;position: relative;top: 6px;">*</span>所在地区：</dt>
+				<dd>
+					<select name="sheng" id="area1"></select>
+					<select name="shi" id="area2"></select>
+					<select name="xian" id="area3"></select>
+				</dd>
+			</dl>
+			<dl>
+				<dt><span style="color: red; font-size: 20px; line-height: 28px;position: relative;top: 6px;">*</span>街道地址：</dt>
+				<dd><input id="jddz" class="input"  type="text" placeholder="不必重复填写地区" /></dd>
+			</dl>
+			<dl>
+				<dt><span style="color: red; font-size: 20px; line-height: 28px;position: relative;top: 6px;">*</span>手机号码：</dt>
+				<dd><input id="sjhm" class="input"  type="text" placeholder="请输入正确的手机号" /></dd>
+			</dl>
+			<dl>
+				<dt>电话号码：</dt>
+				<dd><input class="input"  type="text" placeholder="区号-电话号码-分机" /></dd>
+			</dl>
+			<dl>
+				<dt>默认：</dt>
+				<dd><input type="checkbox"/> 设置为默认地址</dd>
+			</dl>
+			<p><a id="noBtn" href="javascript:;">放弃操作</a><a id="yesBtn" href="javascript:;">确认提交</a></p>
+		</div>
+		
+		<div class="footer">
+			<div class="content">
+				<ul class="u1">
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">招商合作</a></li>
+					<li><a href="javascript:;">关于央广购物</a></li>
+					<li><a href="javascript:;">联系我们</a></li>
+					<li><a href="javascript:;">成为供应商</a></li>
+					<li><a href="javascript:;">招贤纳士</a></li>
+				</ul>
+				<ul class="u2">
+					<li><a href="javascript:;">京公网安备：11011502002190</a></li>
+					<li><a href="javascript:;">京ICP备10038858号</a></li>
+					<li><a href="javascript:;">食品流通许可证编号：SP1101151210063489</a></li>
+					<li><a href="javascript:;">信息网络传播视听节目许可证 0102002号</a></li>
+				</ul>
+				<p>Copyright©2010-2017 cnrmall.com All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务热线：4008-518-518</p><br />
+				<p><img src="../img/122.png" style="cursor: pointer;"/></p>
+			</div>
+		</div>
+	</body>
+	<div id="largeHide"></div>
+</html>
+<script type="text/javascript" src="area.js"></script>

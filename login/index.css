@@ -1,0 +1,402 @@
+.login-header .logo{
+	display: inline-block;
+	margin-top: 8px;
+}
+.login-header .content{
+	width: 1000px;
+}
+.login-header .login img{
+	width: 240px;
+	height: 68px;
+}
+.login-header{
+	height: 82px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.login-header .right img{
+	border-radius:50% ;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+}
+.login-header .right{
+	float: right;
+	padding-top: 30px;
+}
+.login-header .right span{
+	margin-left: 50px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #666666;
+}
+.login-header .right a{
+	line-height: 20px;
+	font-size: 14px;
+	color: #06C;
+	font-weight: bolder;
+}
+.login-header .right a:hover{
+	color: #C81623;
+}
+.login-main{
+	background: #fafafa;
+	position: relative;
+}
+.login-main .content{	
+	height: 600px;
+	background: url(../img/166.jpg) no-repeat 0 70px;
+	width: 1000px;
+	position: relative;
+}
+.login-main .login{
+	float: right;
+	background: #fff;
+	width: 440px;
+	height: 460px;
+	border: 1px solid #E4E4E4;
+}
+.login-main .login .text1{
+	border-bottom: 1px solid #ccc;
+}
+.login-main .login .text1 a{
+	display: inline-block;
+	width: 220px;
+	line-height: 40px;
+	font-size: 28px;
+	text-align: center;
+	border-bottom: 3px solid #fff;
+	position: relative;
+	color: #CECECE;
+	bottom: -1px;
+}
+.login-main .login .text1 a:hover{
+	color: #000;
+}
+.login-main .login .text1 .active{
+	border-bottom: 3px solid #FF500B;
+	color: #FF500B;
+}
+.login-main .login .text1 .active:hover{
+	color: #FF500B;
+}
+.login-main .login .text1 .active span{
+	color: #FF500B;
+}
+.login-main .login .text1{
+	margin-bottom: 35px;
+}
+.login-main .login .text1 span{
+	position: absolute;
+	top: 28px;
+	left: 106px;
+	color: #fff;
+}
+
+.login-main #loginForm .no{
+	border-bottom: none;
+}
+.login-main #loginForm dl{
+	width: 350px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+.login-main #loginForm dt,.login-main #loginForm dd{
+	display: inline-block;
+}
+.login-main dd{
+	position: relative;
+}
+.login-main #loginForm input{
+	line-height: 28px;
+	outline: none;
+}
+.login-main #loginForm dt{
+	text-align: center;
+	width: 108px;
+	line-height: 52px;
+	font-size: 16px;
+}
+.login-main #loginForm .codebox{
+	position: relative;
+}
+.login-main #loginForm .codeimg{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 52px;
+	z-index: 0;
+	cursor: pointer;
+}
+.login-main #loginForm .codebox .kbq{
+	width: 130px;
+	height: 52px;
+	position: absolute;
+	text-align: center;
+	line-height: 52px;
+	color: #fff;
+	font-size: 14px;
+	z-index: 100;
+	right: 0;
+	top: 0;
+	background: rgba(0,0,0,0.5);
+	display: none;
+}
+.login-main #loginForm #kbq{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 52px;
+	z-index: 0;
+	cursor: pointer;
+}
+.login-main #loginForm #kbq:hover .kbq{
+	display: block;
+}
+.login-main #loginForm .mian{
+	padding: 20px 0;
+	width: 350px;
+	margin: 0 auto;
+}
+.login-main #loginForm .mian a{
+	float: right;
+	color:#06C ;
+}
+
+.login-main #loginForm .mian em{
+	margin-left: 15px;
+	color: #ff3238;
+	opacity: 0;
+	
+}
+.login-main #loginForm .mian input{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+#loginbtn{
+	width: 350px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 18px;
+	background: #FF500B;
+	color: #fff;
+	border-radius: 10px;
+	margin: 0 45px;
+	outline: none;
+	cursor: pointer;
+}
+.login-main p{
+	padding: 15px 0 15px 45px;
+	color: #000;
+	font-weight: bold;
+	margin-top: 320px;
+}
+.login-main .wx{
+	display: inline-block;
+	margin-left: 45px;
+	font-size: 18px;
+}
+.login-main .wx:hover{
+	color: green;
+}
+.login-main .login{
+	padding: 10px 20px 20px 20px ;
+	position: relative;
+	top: 30px;
+}
+
+
+.login-main .login{
+	position: relative;
+}
+#loginForm{
+	background: #fff;
+	position: absolute;
+	left: 20px;
+	opacity: 1;
+}
+#loginForm1{
+/*	display: none;*/
+	position: absolute;
+	background: #fff;
+	left: -600px;
+	opacity: 0;
+}
+.login-main #loginForm1 .no{
+	border-bottom: none;
+}
+.login-main #loginForm1 dl{
+	width: 350px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+.login-main #loginForm1 dt,.login-main #loginForm1 dd{
+	display: inline-block;
+}
+.login-main #loginForm1 input{
+	line-height: 28px;
+	outline: none;
+}
+.login-main #loginForm1 dt{
+	text-align: center;
+	width: 108px;
+	line-height: 52px;
+	font-size: 16px;
+}
+.login-main #loginForm1 .codebox{
+	position: relative;
+}
+.login-main #loginForm1 .codeimg{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 52px;
+	z-index: 0;
+	cursor: pointer;
+}
+.login-main #loginForm1 .codebox .kbq{
+	width: 130px;
+	height: 52px;
+	position: absolute;
+	text-align: center;
+	line-height: 52px;
+	color: #fff;
+	font-size: 14px;
+	z-index: 100;
+	right: 0;
+	top: 0;
+	background: rgba(0,0,0,0.5);
+	display: none;
+}
+.login-main #loginForm1 #kbq1{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 52px;
+	z-index: 0;
+	cursor: pointer;
+}
+.login-main #loginForm1 #kbq1:hover .kbq{
+	display: block;
+}
+.login-main #loginForm1 .mian{
+	padding: 20px 0;
+	width: 350px;
+	margin: 0 auto;
+}
+.login-main #loginForm1 .mian a{
+	float: right;
+	color:#06C ;
+}
+
+.login-main #loginForm1 .mian em{
+	margin-left: 15px;
+	color: #ff3238;
+	opacity: 0;
+	
+}
+.login-main #loginForm1 .mian input{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+#loginbtn1{
+	width: 350px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 18px;
+	background: #FF500B;
+	color: #fff;
+	border-radius: 10px;
+	margin: 0 45px;
+	outline: none;
+	cursor: pointer;
+	margin-top: 5px;
+}
+#loginForm1 .dx{
+	display: block;
+	width: 350px;
+	margin: 0 auto;
+	line-height: 30px;
+}
+#loginForm1 .dx a{
+	display: inline-block;
+	background: #21b384;
+	color: #fff;
+	vertical-align: middle;
+	border-radius: 5px;
+	padding: 0 5px;
+}
+#loginForm1 .dx a:hover{
+	background: green;
+}
+.login-main .login-sanjiao{
+	width: 17px;
+	height: 9px;
+	background: url(../img/168.png) no-repeat -280px 0;
+    position: absolute;
+    z-index: 1;
+    top: -9px;
+    left: 160px;
+}
+#loginNameSpan{
+	position: absolute;
+	line-height: 45px;
+	top: -12px;
+	width: 120px;
+	padding: 0px 10px;
+	background: pink;
+	display: none;
+	left: 200px;
+}
+#passwordSpan{
+	position: absolute;
+	line-height: 45px;
+	top: -12px;
+	width: 120px;
+	padding: 0px 10px;
+	background: pink;
+	display: none;
+	left: 200px;
+}
+#codeSpan{
+	position: absolute;
+	top: 0px;
+	left:90px;
+	font-size: 18px;
+	display: none;
+}
+
+
+
+
+
+
+#loginNameSpan1{
+	position: absolute;
+	line-height: 45px;
+	top: -12px;
+	width: 120px;
+	padding: 0px 10px;
+	background: pink;
+	display: none;
+	left: 200px;
+}
+#codeSpan1{
+	position: absolute;
+	line-height: 45px;
+	top: -12px;
+	width: 120px;
+	padding: 0px 10px;
+	background: pink;
+	display: none;
+	left: 200px;
+}
+#passwordSpan1{
+	position: absolute;
+	top: 0px;
+	left:90px;
+	font-size: 18px;
+	display: none;
+}
+

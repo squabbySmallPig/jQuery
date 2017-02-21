@@ -1,0 +1,473 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, form, input, textarea, p,th, td{
+	margin:0;padding:0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	font:12px/1.5 "微软雅黑";
+	background: #FFF none repeat scroll 0 0;
+	color: #666;
+	/*overflow-x: hidden;*/
+	overflow-y: auto;
+	background: #f2f2f2;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	outline: none;
+	color: #666
+}
+button{
+	outline: none;
+}
+input,img{
+	border: none;
+}
+.content{
+	width: 1200px;
+	margin: 0 auto;
+}
+.header{
+	border-bottom: 1px solid #E1E1E1;
+	background: #f6f6f6;
+	height: 39px;
+}
+.header .login a:nth-of-type(2){
+	color:#FF5B57 ;
+}
+.header dl{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 20px;
+	margin: 10px 0 9px;
+	width: 100px;
+	border: 1px solid #F6F6F6;
+	text-align: center;
+}
+.header .login{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 20px;
+	margin: 10px 0 9px 700px;
+}
+.header dt{	
+	border-left:solid 1px #E1E1E1;
+}
+.header dd{
+	display: none;
+	position: relative;
+	
+}
+.header i{
+	position: relative;
+	top: 2px;
+	transition:scale .2s linear;
+}
+.order:hover dd{
+	display: block;
+}
+.order:hover i{
+	transform: scale(2,2);
+}
+.header dl{
+	z-index: 6;
+	position: relative;
+}
+.order:hover{
+	background: #fff;
+	border: 1px solid #ccc;
+	line-height: 34px;
+	margin-top: 3px;
+}
+.service:hover dd{
+	display: block;
+}
+.service:hover{
+	background: #fff;
+	border: 1px solid #ccc;
+	line-height: 34px;
+	margin-top: 3px;
+}
+.collect:hover dd{
+	display: block;
+}
+.collect:hover{
+	background: #fff;
+	border: 1px solid #ccc;
+	line-height: 34px;
+	margin-top: 3px;
+}
+.header dd:hover{
+	background: #F6F6F6;
+}
+.search{
+	height: 109px;
+	background: #fff;
+}
+.search .logo{
+	display: inline-block;
+	vertical-align: middle;
+}
+.search .search-box{
+	width: 43.1%;
+	display: inline-block;
+	height: 40px;
+	position: relative;
+	top:15px;
+	margin-left: 20px;
+}
+.search .search-box .top{
+	margin-top: 24px;
+	border: solid #F15C18;
+    border-width: 2px 0 2px 2px;
+}
+.search .search-box .top div{
+	display: inline-block;
+	width: 53px;
+	line-height: 36px;
+	position: relative;
+}
+#dp,#bb{
+	display: block;
+	padding-left: 15px;
+	width: 100%;
+}
+#dp{
+	position: absolute;
+	top: 36px;
+	z-index: 1;
+	background: #fff;
+	display: none;
+}
+#bb{
+	background: #f8f8f8;
+	border-right: 1px solid #cecece;
+}
+#bb:hover,#dp:hover{
+	color:#f40
+}
+.search .content{
+	position: relative;
+}
+.search .search-box .top div:hover #dp{
+	display: block;
+	border: 1px solid #cecece;
+	border-top: none;
+}
+.search input[type='text']{
+    width: 361px;
+    height: 22px;
+    padding: 7px 0px 7px 20px;
+    line-height: 36px;
+    color: #555;
+    outline: none;
+}
+.search input[type='button']{
+    outline: none;
+	line-height: 38px;
+	background: #F15C18;
+	padding: 0 25px;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+.search .bottom{
+	margin-top: 5px;
+}
+.search .bottom a{
+	color: #999;
+}
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 230754 */
+  src: url('https://at.alicdn.com/t/font_9u82knjnrg5mte29.eot');
+  src: url('https://at.alicdn.com/t/font_9u82knjnrg5mte29.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_9u82knjnrg5mte29.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_9u82knjnrg5mte29.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_9u82knjnrg5mte29.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont";
+    font-size:16px;
+    font-style:normal;
+}
+.my-mall{
+	font-size: 12px;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 5%;
+    position: relative;
+    z-index: 3;
+    width: 116px;
+}
+.my-mall dt{
+	line-height: 20px;
+    color: #555;
+    background-color: #fff;
+    height: 20px;
+    padding: 10px 0;
+    text-align: center;
+    width: 115px;
+    margin-left: 5px;
+    border: solid 1px #F0F0F0;
+    cursor: pointer;
+    margin-top: 38px;
+    position: relative;
+    z-index: 3;
+}
+.my-mall:hover dd{
+	display: block;
+}
+.my-mall:hover dt{
+	border-bottom: 1px solid #fff;
+}
+.my-mall dd{
+    background: #fff;
+	width: 250px;
+	padding: 10px;
+	height: 140px;
+	position: absolute;
+	margin-left: -130px;
+	z-index: 2;
+	border: 1px solid #F0F0F0;
+	margin-top: -1px;
+	display: none;
+}
+.user-box{
+	overflow: hidden;
+	border-bottom: 1px dashed #CCCCCC;
+	padding-bottom: 10px;
+}
+.user-avatar{
+    float: left;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+.user-avatar img{
+	max-width: 48px;
+    max-height: 48px;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+.user-info{
+	float: right;
+	margin-top: 11px;
+	margin-right: 50px;
+	padding: 5px;
+	position: relative;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.user-info:hover{
+	background: #ccc;
+}
+.user-centent{
+	width: 100%;
+}
+.user-centent li{
+	width: 45%;
+	float: left;
+	padding: 4px 0 4px 10px;	
+}
+.user-centent li a:hover{
+	color: #f40;
+}
+.my-cart{
+	position: absolute;
+	top: 39px;
+	left: 85%;
+	background: #fff;
+	cursor: pointer;
+}
+.my-cart dt{
+	width:145px ;
+	text-align: center;
+	border: 1px solid #f0f0f0;
+	line-height: 38px;
+	position: relative;
+	background: #fff;
+	z-index: 5;
+}
+.my-cart dd{
+	position: absolute;
+	top: 40px;
+	left: -103px;
+	padding: 0 10px;
+	z-index: 4;
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	display: none;
+}
+.my-cart dd div{
+	padding: 8px 0;
+}
+.my-cart .new-goods{
+	border-bottom: 1px solid #ccc;
+}
+.my-cart .goods-list{
+	text-align: center;
+}
+.my-cart:hover dt{
+	border-bottom: 1px solid #fff;
+}
+.my-cart:hover dd{
+	display: block;
+}
+.nav{
+	background: #fff;
+}
+.nav li{
+	display: inline-block;
+	line-height: 41px;
+	font-size: 15px;
+	padding: 0 25px;
+}
+.nav ul{
+	margin-left: 172px;
+}
+.nav li:nth-of-type(1) a{
+	color: #F15C18;
+	font-weight: bolder;
+}
+.nav li:hover a{
+	color: #F15C18;
+}
+.nav{
+	border-bottom: 1px solid #F15C18;
+}
+.main11{
+	padding:40px 0;
+	background: #fff;
+}
+.main11 .content .dl1{
+	border-right: 1px solid #EEEEEE;
+}
+.main11 .content dl{
+	display: inline-block;
+	padding:0px 50px;
+}
+.main11 dt{
+	font-size: 14px;
+	font-weight: bolder;
+}
+.main11 dd{
+	line-height: 25px;
+	cursor: pointer;
+	color: #666;
+}
+.main11 dd:hover{
+	color: orangered;
+}
+.footer{
+	text-align: center;
+	background: #333333;
+	color: #fff;
+}
+.footer a{
+	color: #fff;
+}
+.footer .u1{
+	text-align: center;
+	padding: 20px 0;
+}
+.footer .u1 li:last-child{
+	border: none;
+}
+.footer .u1 li{
+	display: inline-block;
+	padding:0 20px;
+	line-height: 1;
+	border-right:1px solid #494F4F ;
+}
+.footer li:hover{
+	text-decoration: underline;
+}
+.footer .u2{
+	padding-bottom: 20px;
+}
+.footer .u2 li{
+	display: inline-block;
+	padding:0 20px;
+	line-height: 1;
+}
+.footer p{
+	margin: 10px;
+	display: inline-block;
+}
+
+
+
+#right-shu{
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 6px;
+	height: 100%;
+	background: #483E39;
+	z-index: 100;
+}
+#rightul{
+	position: fixed;
+	right: 0;
+	top: 250px;
+}
+#rightul li i{
+	display: block;
+	text-align: center;
+	background: #483E39;
+	color: #fff;
+	border-radius: 5px;
+	line-height: 34px;
+}
+#rightul li{
+	width: 34px;
+	height: 34px;
+	margin-bottom: 3px;
+	border-radius: 5px;
+	cursor: pointer;
+	position: relative;
+}
+#rightul li p{
+	width: 70px;
+	height: 34px;
+	line-height: 34px;
+	position: absolute;
+	z-index: -1;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	left: 0;
+	top: 0;
+	color: #fff;
+	background: #FF4400;
+	transition: .4s;
+	transition-delay: .2s;
+	text-align: center;
+}
+#rightul li:hover i{
+	background: #FF4400;
+}
+#rightul li:hover p{
+	transform: translateX(-68px);
+}
+#right-backtop{
+	width: 34px;
+	height: 34px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 34px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	background: #483E39;
+	cursor: pointer;
+	color: #fff;
+}
+#right-backtop:hover{
+	background: #FF4400;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../common.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<script src="../jquery-1.9.1.js"></script>
+		<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div class="register-header">
+			<div class="content">
+				<a class="logo" href="index/index.html"><img src="../img/1.gif"/></a>
+				<span>我已注册，现在就<a href="login/index.html"> 登录</a></span>
+			</div>
+		</div>
+		<div class="register-bg">
+			<div class="content">
+				<div class="firstRegister">
+					<div class="left">
+						<h3><a href="#">手机注册</a></h3>
+						<form id="registerForm">
+			                <dl>
+			               		<dt>手&nbsp;机&nbsp;号&nbsp;：</dt>
+			                	<dd>
+			                  		<input type="text" id="tel" autocomplete="off" placeholder="请输入手机号码"><span id="telSpan"><i class="iconfont" style="color: orangered;">&#xe602;</i> 该号码已存在</span><span id="telSpan1"><i class="iconfont" style="color: orangered;">&#xe602;</i> 号码不合法</span>
+			                	</dd>
+			              	</dl>
+			                <dl>
+			                  	<dt>验&nbsp;证&nbsp;码&nbsp;：</dt>
+			                  	<dd>
+			                    	<input id="code"type="text" placeholder="输入验证码" autocomplete="off"><span id="codeSpan"><i class="iconfont" style="color: orangered;">&#xe602;</i></span>
+			                  	</dd>
+				            	<div id="kbq">
+				            		<img class="codeimg" src="../img/168.jpg" ><a class="kbq" href="JavaScript:;">看不清，换一张</a>
+				            	</div>
+			                </dl>
+			            	<div class="xieyi">
+			                	<input type="checkbox"id="xieyi"checked="checked"> 阅读并同意<a href="javascript:;">《服务协议》</a><span id="xieyiSpan" style="color: red;opacity: 0;"><i class="iconfont" style="color: orangered;">&#xe602;</i> 请阅读并同意服务协议</span>
+			                </div>
+			                <button id="next">下一步</button>
+			            </form>
+			            
+			            
+			            <form id="registerForm1">
+			            	<dl>
+			               		<dt>动态码：</dt>
+			                	<dd>
+			                  		<input type="text" id="moveCode" autocomplete="off" placeholder="输入6位短信验证码"><span id="moveCodeSpan" style="opacity: 0;"><i class="iconfont" style="color: orangered;">&#xe602;</i> 动态码错误</span>
+			                	</dd>
+			              	</dl>
+			                <dl>
+			                  	<dt>验证码：</dt>
+			                  	<dd>
+			                    	<input id="code1"type="text" placeholder="输入验证码" autocomplete="off"><span id="codeSpan1" style="opacity: 0;"><i class="iconfont" style="color: orangered;">&#xe602;</i></span>
+			                  	</dd>
+				            	<div id="kbq1">
+				            		<img class="codeimg" src="../img/169.jpg" ><a class="kbq" href="JavaScript:;">看不清，换一张</a>
+				            	</div>
+			                </dl>
+			                <div class="getCode">
+			                	<a id="getCode" href="javascript:;">重新获取动态码</a>
+			                	<p id="againCode"><span></span>后重新点击获取动态码</p>
+			                </div>
+			                <dl>
+			               		<dt>用户名：</dt>
+			                	<dd>
+			                  		<input type="text" id="userName" autocomplete="off" placeholder="6-20个英文、数字，英文开头"><span id="userNameSpan"style="position: absolute;opacity: 0;width: 140px; left: 290px; top: 5px;"><i class="iconfont" style="color: orangered;">&#xe602;</i> 输入合法用户名</span>
+			                	</dd>
+			              	</dl>
+			              	<dl>
+			               		<dt>设置密码：</dt>
+			                	<dd>
+			                  		<input type="password" id="password" autocomplete="off" ><span id="passwordSpan" style="position: absolute;opacity: 0;width: 120px; left: 290px; top: 5px;"><i class="iconfont" style="color: orangered;">&#xe602;</i> 请设置密码</span>
+			                	</dd>
+			              	</dl>
+			              	<dl>
+			               		<dt>确认密码：</dt>
+			                	<dd>
+			                  		<input type="password" id="againPasswod" autocomplete="off" ><span id="passwordSpan1"style="position: absolute;opacity: 0;width: 140px; left: 290px; top: 5px;"><i class="iconfont" style="color: orangered;">&#xe602;</i> 请确认密码</span>
+			                	</dd>
+			              	</dl>
+			              	<button id="nowRegister">立即注册</button>
+			            </form>
+					</div>
+					<div class="right">
+						<dl>
+							<dt>注册之后您可以</dt>
+							<dd><i></i> 购买商品支付订单</dd>
+							<dd><i></i> 收藏商品收藏店铺</dd>
+							<dd><i></i> 安全交易诚信无忧</dd>
+							<dd><i></i> 会员等级享受特权</dd>
+							<dd><i></i> 交易评价站外分享</dd>
+						</dl>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div id="success" style="background: url(../img/196.jpg);">
+			<span style="font-size: 50px;position: absolute; right: 0;top: -20px;cursor: pointer;">×</span>
+			<p class="p1">恭喜您，注册成功！</p>
+			<p id="backIndex" class="p2">立即登录</p>
+		</div>
+		
+		
+		<div class="footer">
+			<div class="content">
+				<ul class="u1">
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">招商合作</a></li>
+					<li><a href="javascript:;">关于央广购物</a></li>
+					<li><a href="javascript:;">联系我们</a></li>
+					<li><a href="javascript:;">成为供应商</a></li>
+					<li><a href="javascript:;">招贤纳士</a></li>
+				</ul>
+				<ul class="u2">
+					<li><a href="javascript:;">京公网安备：11011502002190</a></li>
+					<li><a href="javascript:;">京ICP备10038858号</a></li>
+					<li><a href="javascript:;">食品流通许可证编号：SP1101151210063489</a></li>
+					<li><a href="javascript:;">信息网络传播视听节目许可证 0102002号</a></li>
+				</ul>
+				<p>Copyright©2010-2017 cnrmall.com All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务热线：4008-518-518</p><br />
+				<p><img src="../img/122.png" style="cursor: pointer;"/></p>
+			</div>
+		</div>
+	<div id="behind"></div>
+	</body>
+</html>

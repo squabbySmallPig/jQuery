@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../common.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<script src="../jquery-1.9.1.js"></script>
+		<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="content">
+				<div class="login"><a id='indexUser' href="../login/index.html">您好，请登录</a> <a href="../register/index.html">免费注册</a></div>
+				<dl class="order">
+		        	<dt><a href="javascript:;">我的订单&nbsp;<i class="iconfont">&#xe6c8;</i></a></dt>
+		            <dd><a href="javascript:;">待付款订单</a></dd>
+		            <dd><a href="javascript:;">待确认收货</a></dd>
+		            <dd><a href="javascript:;">待评价交易</a></dd>
+		       </dl>
+		       <dl class="service">
+		        	<dt><a href="javascript:;">客户服务&nbsp;<i class="iconfont">&#xe6c8;</i></a></dt>
+		            <dd><a href="javascript:;">购物指南</a></dd>
+		            <dd><a href="javascript:;">售后服务</a></dd>
+		            <dd><a href="javascript:;">商家服务</a></dd>
+		       </dl>
+		       <dl class="collect">
+		        	<dt><a href="javascript:;">我的收藏&nbsp;<i class="iconfont">&#xe6c8;</i></a></dt>
+		            <dd><a href="javascript:;">商品收藏</a></dd>
+		            <dd><a href="javascript:;">店铺收藏</a></dd>
+		       </dl>
+			</div>
+		</div>
+		<div class="search">
+			<div class="content">
+				<a class="logo" href="../index.html">
+					<img src="../img/1.gif"/>
+				</a>
+				<div class="search-box">
+					<div class="top">
+						<div><a href="javascript:;" id="bb"><span id="searchbb">宝贝</span>&nbsp;<i class="iconfont" style="position: relative;top: 3px;">&#xe6c8;</i></a><a href="javascript:;" id="dp">店铺</a></div>
+						<input id="searchbox" type="text" placeholder="请输入您要搜索的商品的关键字" /><input id="sousuo" type="button" value="搜索">						
+					<ul id="searchlist"></ul>
+					</div>
+					
+					<div class="bottom"><a href="javascript:;"> 情人节礼物 丨</a><a href="javascript:;"> 央广助农日 丨</a><a href="javascript:;"> 3M 丨</a><a href="javascript:;"> 达芙妮 丨</a><a href="javascript:;"> Louis Vuitton 丨</a><a href="javascript:;"> 古方 </a></div>
+				</div>
+				<dl class="my-mall">
+        			<dt><span class="iconfont" style="font-size: 20px; color: #f40;">&#xe694;</span>&nbsp;我的商城</dt>
+        			<dd>
+        				<div class="user-box">
+            				<div class="user-avatar"><img src="../img/10.jpg">  </div>
+           					<div class="user-info"><a href="../login/index.html">您好，请登录</a></div>
+        				</div>
+        				<div class="user-centent">
+		         			<ul>
+			            		<li><a target="_blank" href="javascript:;">站内消息</a></li>
+			            		<li><a target="_blank" href="javascript:;">我的订单</a></li>
+					            <li><a target="_blank" href="javascript:;">咨询回复</a></li>
+					            <li><a target="_blank" href="javascript:;">我的收藏</a></li>
+					            <li><a target="_blank" href="javascript:;">我的足迹</a></li>
+					            <li><a target="_blank" href="javascript:;">我的积分</a></li>
+		         			</ul>
+        				</div>
+   	 				</dd>
+       			</dl>
+       			<dl class="my-cart">
+        			<dt><span class="iconfont" style="font-size: 20px; color: #f40;">&#xe60c;</span>&nbsp;购物车结算</dt>
+        			<dd>
+        				<div class="new-goods">最新加入的商品</div>
+        				<div class="goods-list">购物车中无商品，赶快选择心爱的商品吧！</div>
+        				<ul id="newgoods-list"></ul>
+        				<div class="money">合计：<span id="money">0元</span></div>
+        				<div id="giveMoney" >去结算</div>
+   	 				</dd>
+        		</dl>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="content">
+				<ul>
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">TV直播</a></li>
+					<li><a href="javascript:;">品牌特卖</a></li>
+					<li><a href="javascript:;">今日特惠</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="details-category">
+			<div class="content">
+			<div class="category">
+				
+				<div class="allcontent">
+				<h3><a href="javascript:;">所有商品分类</a></h3>
+
+				<div class="all">
+					<ul>
+						<li><i class="iconfont">&#xe61f;</i><a href="javascript:;">&nbsp;食品饮料</a>
+							<div class="l1">
+
+		                    <dl>
+		                        <dt><a href="javascript:;">粮油调味&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">米面杂粮</a>
+		                            <a href="../goods-list/index.html">食用油</a>
+		                            <a href="javascript:;">调味品</a>
+		                            <a href="javascript:;">南北干货</a>
+		                            <a href="javascript:;">方便食品</a>
+		                            <a href="javascript:;">有机食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="javascript:;">休闲食品&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10750">饮料冲调&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10766">食品礼券&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10783">茗茶&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=48108">地方特产&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="https://www.cnrmall.com/search?cat=48110">北京</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48153">新疆</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48218">山西</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48308">内蒙古</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48366">福建</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48422">湖南</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48466">四川</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48540">云南</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48635">东北</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48732">其他特产</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=101178">生鲜&nbsp;&gt;</a></dt>
+		                        <dd>
+	                                <a href="https://www.cnrmall.com/search?cat=101182">猪牛羊肉</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101403">新鲜水果</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101405">海鲜水产</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101409">禽类蛋品</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101412">新鲜素菜</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101414">速冻食品</a>
+		                        </dd>
+		                    </dl>
+							</div>			
+						</li>
+						<li><i class="iconfont">&#xe620;</i><a href="javascript:;">&nbsp;中外名酒</a>
+							<div class="l2">
+								<dl>
+									<dt><a href="javascript:;">酒类&nbsp;&gt;</a></dt>
+									<dd>
+										<a href="javascript:;">黄酒</a>
+										<a href="javascript:;">白酒</a>
+										<a href="javascript:;">红酒</a>
+										<a href="javascript:;">劲酒</a>
+										<a href="javascript:;">老白干</a>
+										<a href="javascript:;">二锅头</a>
+										<a href="javascript:;">老村长</a>
+										<a href="javascript:;">海之蓝</a>
+									</dd>
+								</dl>
+							</div>
+						</li>
+						<li><i class="iconfont">&#xe627;</i><a href="javascript:;">&nbsp;营养保健</a>
+							<div class="l3">
+								
+							
+		                    <dl>
+		                        <dt><a href="javascript:;">粮油调味&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">米面杂粮</a>
+		                            <a href="javascript:;">食用油</a>
+		                            <a href="javascript:;">调味品</a>
+		                            <a href="javascript:;">南北干货</a>
+		                            <a href="javascript:;">方便食品</a>
+		                            <a href="javascript:;">有机食品</a>
+		                        </dd>
+		                    </dl>
+		                    
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10622">进口食品&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10750">饮料冲调&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10766">食品礼券&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                        </dd>
+		                    </dl>
+		                    
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=48108">地方特产&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="https://www.cnrmall.com/search?cat=48110">北京</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48153">新疆</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48218">山西</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48308">内蒙古</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48366">福建</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48422">湖南</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48466">四川</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48540">云南</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48635">东北</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48732">其他特产</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=101178">生鲜&nbsp;&gt;</a></dt>
+		                        <dd>
+	                                <a href="https://www.cnrmall.com/search?cat=101182">猪牛羊肉</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101403">新鲜水果</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101405">海鲜水产</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101409">禽类蛋品</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101412">新鲜素菜</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101414">速冻食品</a>
+		                        </dd>
+		                    </dl>
+							</div>				
+						</li>
+						<li><i class="iconfont">&#xe651;</i><a href="javascript:;">&nbsp;珠宝首饰</a>
+							<div class="l4">
+		                    <dl>
+		                        <dt><a href="javascript:;">粮油调味&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">米面杂粮</a>
+		                            <a href="javascript:;">食用油</a>
+		                            <a href="javascript:;">调味品</a>
+		                            <a href="javascript:;">南北干货</a>
+		                            <a href="javascript:;">方便食品</a>
+		                            <a href="javascript:;">有机食品</a>
+		                            <a href="javascript:;">有机食品</a>
+		                            <a href="javascript:;">有机食品</a>
+		                            
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="javascript:;">休闲食品&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                
+		                            
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10622">进口食品&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                             <a href="javascript:;">无糖食品</a>
+		                              <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10750">饮料冲调&nbsp;&gt;</a></dt>
+		                        <dd>
+		                           
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10766">食品礼券&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10783">茗茶&nbsp;&gt;</a></dt>
+		                        <dd>
+		                          
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                             <a href="javascript:;">无糖食品</a>
+		                              <a href="javascript:;">无糖食品</a>
+		                               <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=48108">地方特产&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="https://www.cnrmall.com/search?cat=48110">北京</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48153">新疆</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48218">山西</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48308">内蒙古</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48366">福建</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48422">湖南</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48466">四川</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48540">云南</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48635">东北</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48732">其他特产</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=101178">生鲜&nbsp;&gt;</a></dt>
+		                        <dd>
+	                                <a href="https://www.cnrmall.com/search?cat=101182">猪牛羊肉</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101403">新鲜水果</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101405">海鲜水产</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101409">禽类蛋品</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101412">新鲜素菜</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101414">速冻食品</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101414">速冻食品</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101414">速冻食品</a>
+		                        </dd>
+		                    </dl>
+							</div>
+						</li>
+						<li><i class="iconfont">&#xe64b;</i><a href="javascript:;">&nbsp;厨房用具</a>
+							<div class="l5">
+								
+							
+		                    <dl>
+		                        <dt><a href="javascript:;">粮油调味&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">米面杂粮</a>
+		                            <a href="javascript:;">食用油</a>
+		                            <a href="javascript:;">调味品</a>
+		                            <a href="javascript:;">南北干货</a>
+		                            <a href="javascript:;">方便食品</a>
+		                            <a href="javascript:;">有机食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="javascript:;">休闲食品&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10622">进口食品&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10750">饮料冲调&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10766">食品礼券&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10783">茗茶&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=48108">地方特产&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="https://www.cnrmall.com/search?cat=48110">北京</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48153">新疆</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48218">山西</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48308">内蒙古</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48366">福建</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48422">湖南</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48466">四川</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48540">云南</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48635">东北</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48732">其他特产</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=101178">生鲜&nbsp;&gt;</a></dt>
+		                        <dd>
+	                                <a href="https://www.cnrmall.com/search?cat=101182">猪牛羊肉</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101403">新鲜水果</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101405">海鲜水产</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101409">禽类蛋品</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101412">新鲜素菜</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101414">速冻食品</a>
+		                        </dd>
+		                    </dl>
+							</div>
+						</li>
+						<li><i class="iconfont">&#xe60d;</i><a href="javascript:;">&nbsp;家用电器</a>
+							<div class="l6">
+								
+							
+		                    <dl>
+		                        <dt><a href="javascript:;">粮油调味&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">米面杂粮</a>
+		                            <a href="javascript:;">食用油</a>
+		                            <a href="javascript:;">调味品</a>
+		                            <a href="javascript:;">南北干货</a>
+		                            <a href="javascript:;">方便食品</a>
+		                            <a href="javascript:;">有机食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="javascript:;">休闲食品&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10622">进口食品&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10750">饮料冲调&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10766">食品礼券&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10783">茗茶&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=48108">地方特产&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="https://www.cnrmall.com/search?cat=48110">北京</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48153">新疆</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48218">山西</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48308">内蒙古</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48366">福建</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48422">湖南</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48466">四川</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48540">云南</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48635">东北</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48732">其他特产</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=101178">生鲜&nbsp;&gt;</a></dt>
+		                        <dd>
+	                                <a href="https://www.cnrmall.com/search?cat=101182">猪牛羊肉</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101403">新鲜水果</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101405">海鲜水产</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101409">禽类蛋品</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101412">新鲜素菜</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101414">速冻食品</a>
+		                        </dd>
+		                    </dl>
+							</div>
+						</li>
+						<li><i class="iconfont">&#xe608;</i><a href="javascript:;">&nbsp;个护化妆</a>
+							<div class="l7">
+								
+							
+		                    <dl>
+		                        <dt><a href="javascript:;">粮油调味&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">米面杂粮</a>
+		                            <a href="javascript:;">食用油</a>
+		                            <a href="javascript:;">调味品</a>
+		                            <a href="javascript:;">南北干货</a>
+		                            <a href="javascript:;">方便食品</a>
+		                            <a href="javascript:;">有机食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="javascript:;">休闲食品&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10622">进口食品&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10750">饮料冲调&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10766">食品礼券&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10783">茗茶&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=48108">地方特产&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="https://www.cnrmall.com/search?cat=48110">北京</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48153">新疆</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48218">山西</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48308">内蒙古</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48366">福建</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48422">湖南</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48466">四川</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48540">云南</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48635">东北</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48732">其他特产</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=101178">生鲜&nbsp;&gt;</a></dt>
+		                        <dd>
+	                                <a href="https://www.cnrmall.com/search?cat=101182">猪牛羊肉</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101403">新鲜水果</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101405">海鲜水产</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101409">禽类蛋品</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101412">新鲜素菜</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101414">速冻食品</a>
+		                        </dd>
+		                    </dl>
+							</div>
+						</li>
+						<li><i class="iconfont">&#xe622;</i><a href="javascript:;">&nbsp;服饰内衣</a>
+							<div class="l8">
+								
+							
+		                    <dl>
+		                        <dt><a href="javascript:;">粮油调味&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">米面杂粮</a>
+		                            <a href="javascript:;">食用油</a>
+		                            <a href="javascript:;">调味品</a>
+		                            <a href="javascript:;">南北干货</a>
+		                            <a href="javascript:;">方便食品</a>
+		                            <a href="javascript:;">有机食品</a>
+		                        </dd>
+		                    </dl>
+		                    
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10622">进口食品&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10750">饮料冲调&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10766">食品礼券&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10783">茗茶&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=101178">生鲜&nbsp;&gt;</a></dt>
+		                        <dd>
+	                                <a href="https://www.cnrmall.com/search?cat=101182">猪牛羊肉</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101403">新鲜水果</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101405">海鲜水产</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101409">禽类蛋品</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101412">新鲜素菜</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101414">速冻食品</a>
+		                        </dd>
+		                    </dl>
+							</div>
+						</li>
+						<li><i class="iconfont">&#xe621;</i><a href="javascript:;">&nbsp;礼品箱包</a>
+							<div class="l9">
+								
+							
+		                    <dl>
+		                        <dt><a href="javascript:;">粮油调味&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">米面杂粮</a>
+		                            <a href="javascript:;">食用油</a>
+		                            <a href="javascript:;">调味品</a>
+		                            <a href="javascript:;">南北干货</a>
+		                            <a href="javascript:;">方便食品</a>
+		                            <a href="javascript:;">有机食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="javascript:;">休闲食品&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10622">进口食品&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10750">饮料冲调&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10766">食品礼券&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10783">茗茶&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=48108">地方特产&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="https://www.cnrmall.com/search?cat=48110">北京</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48153">新疆</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48218">山西</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48308">内蒙古</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48366">福建</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48422">湖南</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48466">四川</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48540">云南</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48635">东北</a>
+		                            <a href="https://www.cnrmall.com/search?cat=48732">其他特产</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=101178">生鲜&nbsp;&gt;</a></dt>
+		                        <dd>
+	                                <a href="https://www.cnrmall.com/search?cat=101182">猪牛羊肉</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101403">新鲜水果</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101405">海鲜水产</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101409">禽类蛋品</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101412">新鲜素菜</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101414">速冻食品</a>
+		                        </dd>
+		                    </dl>
+							</div>
+						</li>
+						<li><i class="iconfont">&#xe635;</i><a href="javascript:;">&nbsp;文化收藏</a>
+							<div class="l10">
+								
+							
+		                    <dl>
+		                        <dt><a href="javascript:;">粮油调味&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">米面杂粮</a>
+		                            <a href="javascript:;">食用油</a>
+		                            <a href="javascript:;">调味品</a>
+		                            <a href="javascript:;">南北干货</a>
+		                            <a href="javascript:;">方便食品</a>
+		                            <a href="javascript:;">有机食品</a>
+		                        </dd>
+		                    </dl>
+		                  
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10622">进口食品&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10750">饮料冲调&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10766">食品礼券&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                        </dd>
+		                    </dl>
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=10783">茗茶&nbsp;&gt;</a></dt>
+		                        <dd>
+		                            <a href="javascript:;">休闲零食</a>
+		                            <a href="javascript:;">坚果炒货</a>
+		                            <a href="javascript:;">肉干肉脯</a>
+		                            <a href="javascript:;">蜜饯果干</a>
+		                            <a href="javascript:;">糖果/巧克力</a>
+		                            <a href="javascript:;">饼干蛋糕</a>
+		                            <a href="javascript:;">无糖食品</a>
+		                        </dd>
+		                    </dl>
+		                    
+		                    <dl>
+		                        <dt><a href="https://www.cnrmall.com/search?cat=101178">生鲜&nbsp;&gt;</a></dt>
+		                        <dd>
+	                                <a href="https://www.cnrmall.com/search?cat=101182">猪牛羊肉</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101403">新鲜水果</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101405">海鲜水产</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101409">禽类蛋品</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101412">新鲜素菜</a>
+	                                <a href="https://www.cnrmall.com/search?cat=101414">速冻食品</a>
+		                        </dd>
+		                    </dl>
+							</div>
+						</li>
+					</ul>	
+			</div>
+			</div>	
+		</div>
+		</div>
+		</div>
+		<div class="details-main1">
+			<div class="content">
+				<h5><i class="iconfont">&#xe694;</i><a href="javascript:;"> 营养保健</a>&gt; <a href="javascript:;">传统滋补</a>&gt; <a href="javascript:;">蜂蜜/蜂产品</a>&gt; 藏蜜牌青藏高原野花蜜套组 货号119823</h5>
+				<div class="details-good">
+					<div class="left">
+						<div class="top">
+							<img id="middleImg" src="../img/zoomM1.jpg"/>
+							<div id="zoom"></div>
+							<div id="hideLarge"><img src="../img/zoomM1.jpg"/></div>
+						</div>
+						<div id="hideLarge1">
+							<ul id="hideImgList">
+								<p><a href="javascript:;" id="hideI1" class="iconfont">&#xe644;</a><a href="javascript:;" id="hideI2" class="iconfont">&#xe646;</a><a href="javascript:;" id="hideI3" style="position: relative;top: -3px;" class="iconfont">&#xe723;</a></p>
+								<li><img src="../img/zoomM1.jpg"/></li>
+							</ul>
+						</div>
+						<ul class="smallImgList">
+							<li><img src="../img/zoomM1.jpg"/ class="active"></li>
+							<li><img src="../img/zoomM2.jpg"/ ></li>
+							<li><img src="../img/zoomM3.jpg"/ ></li>
+							<li><img src="../img/zoomM4.jpg"/ ></li>
+							<li><img src="../img/zoomM5.jpg"/ ></li>
+						</ul>
+						<a href="javascript:;">☆收藏商品 2</a>
+					</div>
+					<div class="middle">
+						<h1>天依蜂枣花蜂蜜500g 货号118175</h1>
+						<p class="p1">厂家直供 价格更实惠 天然蜜</p>
+						<p class="p2"><span class="span1">活动价</span><span class="span2">￥218.00</span><span class="span3">赠送幸福金：0.12</span></p>
+						<p class="p3">物流&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;默认中通物流</p>
+						<p class="p4">服务由&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: red;">良品铺子旗舰店</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发货，并提供售后服务。</p>
+						<hr id="hr" />
+						<p class="p5">数量<button class="iconfont" id="jianhao">&#xe6cc;</button	><input style="height: 25px;" id="goodNum" type="text" value="1"/><button class='iconfont' id='jiahao'>&#xe603;</button></p>
+						<p class="p6"><a href="javascript:;" class="a1">立即购买</a><a class="a2" id="adddd"  data-id='11' data-title='厂家直供 价格更实惠 天然蜜' data-price='218.00' data-url='img/303.jpg' href="javascript:;">加入购物车</a></p>
+						<p>服务承诺 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;支持15天无理由退换货</p>
+					</div>
+					<div class="right">
+						<p class="tou">橱窗推荐&nbsp;&nbsp;&nbsp;<i style="font-size: 12px;" class="iconfont">&#xe61a; 换一批</i></p>
+						<p class="img"><img src="../img/171.jpg"/></p>
+						<p class="text">￥13600.00</p>
+						<p class="img"><img src="../img/172.jpg"/></p>
+						<p class="text">￥298.00</p>
+						<p class="img"><img src="../img/173.jpg"/></p>
+						<p class="text">￥422.00</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main2">
+			<div class="content">
+				<div class="left">
+					<div class="left1">
+						<h2>热销商品排行</h2>
+						<dl>
+							<dt><img src="../img/179.jpg"/></dt>
+							<dd>
+								<p class="p1">红塔鲱鱼罐头超值组...</p>
+								<p class="p2">￥188.00</p>
+								<p class="p3">售出：180</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="../img/174.jpg"/></dt>
+							<dd>
+								<p class="p1">红塔鲱鱼罐头超值组...</p>
+								<p class="p2">￥98.00</p>
+								<p class="p3">售出：132</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="../img/178.jpg"/></dt>
+							<dd>
+								<p class="p1">红塔鲱鱼罐头超值组...</p>
+								<p class="p2">￥199.00</p>
+								<p class="p3">售出：120</p>
+							</dd>
+						</dl>
+						
+					</div>
+					<div class="left2">
+						<h2>热门收藏排行</h2>
+						<dl>
+							<dt><img src="../img/176.jpg"/></dt>
+							<dd>
+								<p class="p1">红塔鲱鱼罐头超值组...</p>
+								<p class="p2">￥198.00</p>
+								<p class="p3">收藏：12</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="../img/175.jpg"/></dt>
+							<dd>
+								<p class="p1">红塔鲱鱼罐头超值组...</p>
+								<p class="p2">￥288.00</p>
+								<p class="p3">收藏：9</p>
+							</dd>
+						</dl>
+						
+						<dl>
+							<dt><img src="../img/174.jpg"/></dt>
+							<dd>
+								<p class="p1">红塔鲱鱼罐头超值组...</p>
+								<p class="p2">￥428.00</p>
+								<p class="p3">收藏：6</p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="right">
+					<ul id="headList">
+						<li class="active">商品详情</li>
+						<li>商品评价 2</li>
+						<li>购买咨询</li>
+						<li>售后保障</li>
+					</ul>
+					<ul id="contentList">
+						<li class="part1 active1 hide">
+							<p>品牌：藏蜜</p>
+							<img class="heng" src="../img/180.jpg"/>
+							<ul class="next1">
+								<li>品牌：天依蜂/TianYiFeng</li>
+								<li>价格：0-39</li>
+								<li> 分类：蜂蜜</li>
+								<li> 包装单位：瓶装</li>
+								<li>重量：251-500g</li>
+								<li> 国产/进口：国产</li>
+							</ul>
+							<img class="heng" src="../img/183.jpg"/>
+							<p class="imgs">
+								<img src="../img/184.jpg"/>
+								<img src="../img/185.jpg"/>
+								<img src="../img/186.jpg"/>
+								<img src="../img/187.jpg"/>
+								<img src="../img/188.jpg"/>
+							</p>
+						</li>
+						<li class="part2 hide">
+							<div class="next1"><img src="../img/192.jpg"/></div>
+							<div class="next2"><img src="../img/193.jpg"/></div>
+						</li>
+						<li class="part3 hide">
+							<div class="next1" style="padding: 15px;"><img src="../img/194.jpg"/></div>
+							<div class="next1"><img src="../img/195.jpg"/></div>
+						</li>
+						<li class="part4 hide">
+							<div class="next1">
+								<dl>
+									<dt><i class="i1"></i>央广承诺</dt>
+									<dd>央广商城向您保证所售商品均为正品行货，央广自营商品由央广购物提供发票。</dd>
+								</dl>
+								<dl>
+									<dt><i class="i2"></i>无忧退换货</dt>
+									<dd>“十五天无理由退货，三十天免费换货”保障。商品签收之日起15天之内对商品不满，在主商品及配件齐全的情况下可享受免费退货服务，收藏品类、贵金属商品类、3C数码类、食品及化妆品类除外；商品使用中出现非人为所致的功能故障或残损，30天之内可享受免费换货服务；</dd>
+								</dl>
+							</div>
+							<div class="next2">
+								<dl>
+									<dt><span style="font-weight: bolder;color: orangered;">权利声明： </span></dt>
+									<dd>央广上的所有商品信息、客户评价、商品咨询等内容，是央广重要的经营资源，未经许可，禁止非法转载使用。</dd>
+									<dd><span style="font-weight: bolder;">注：</span>本站商品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作方）负责。本站不提供任何保证，并不承担任何法律责任。</dd>
+								</dl>
+								<dl>
+									<dt><span style="font-weight: bolder;color: orangered;">价格说明： </span></dt>
+									<dd><span style="font-weight: bolder;">折扣：</span>如无特殊说明，折扣指销售商在原价（如品牌专柜标价、商品吊牌价、厂商指导价、厂商建议零售价）等某一价格基础上计算出的优惠比例或优惠金额；如有疑问，您可在购买前联系销售商进行咨询。</dd>
+								</dl>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div id="fixright">
+			<span id="right-shu"></span>
+			<ul id="rightul">
+				<li><i class="iconfont">&#xe605;</i>
+					<p>商城会员</p>
+				</li>
+				<li><i onclick='window.location.href="../goods-cart/index.html"' class="iconfont">&#xe617;</i>
+					<p id="gowuche" onclick='window.location.href="../goods-cart/index.html"'>购物车</p>
+					<span id="goods-count">0</span>
+				</li>
+				<li><i class="iconfont">&#xe7cf;</i>
+					<p>我的收藏</p>
+				</li>
+				<li><i class="iconfont">&#xe6ba;</i>
+					<p>我的足迹</p>
+				</li>
+				<li><i class="iconfont">&#xe649;</i>
+					<p>我的消息</p>
+				</li>
+			</ul>
+			<p id="right-backtop"><i class="iconfont">&#xe648;</i></p>
+		</div>
+		<div class="main3">
+			<div class="content">
+			<h2 style="line-height: 30px;font-size: 24px; font-weight: normal; color: #000;">浏览记录</h2>
+				<ul>
+					<li><a href="javascript:;">
+						<p class="p1">藏蜜牌野花蜜</p>
+						<p class="p2">央广助农日 青藏高原野花蜜 国家地理<br>标识认证 欧盟有机认证产品 12瓶12袋有试吃装</p>
+					</a></li>
+					<li><a href="javascript:;">
+						<p class="p1">中宁红枸杞</p>
+						<p class="p2">央广助农日 青藏高原野花蜜 国家<br>地理标识认证 欧盟有机认证产品 12瓶12袋有试吃装</p>
+					</a></li>
+					<li><a href="javascript:;">
+						<p class="p1">五常有机大米</p>
+						<p class="p2">央广助农日 青藏高原野花蜜 国家地理<br>标识认证 欧盟有机认证产品 12瓶12袋有试吃装</p>
+					</a></li>
+					<li><a href="javascript:;">
+						<p class="p1">陕西洛川苹果</p>
+						<p class="p2">央广助农日 青藏高原野花蜜 国家地<br>理标识认证 欧盟有机认证产品 12瓶12袋有试吃装</p>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="main10" style="font-size: 0;">
+			<img src="../img/bottom.jpg" style="width: 100%; border-bottom: 1px solid #eee;"/>
+		</div>
+		<div class="main11">
+			<div class="content">
+				<dl class="dl1">
+					<dt>公告</dt>
+					<dd>【公告】新疆地区暂停订购事宜</dd>
+					<dd>【公告】希望的田野撒反对电视 阿斯蒂芬...</dd>
+					<dd>【公告】按时打算干涉爱上大股东...</dd>
+					<dd>【公告】发给他人工湖天天安慰...</dd>
+				</dl>
+				<dl>
+					<dt>购物指南</dt>
+					<dd>免费注册</dd>
+					<dd>购物流程</dd>
+					<dd>用户注册协议</dd>
+					<dd>电子发票</dd>
+				</dl>
+				<dl>
+					<dt>商家服务</dt>
+					<dd>招商标准</dd>
+					<dd>平台总则</dd>
+					<dd>入驻注意事项</dd>
+					<dd>招商资质标准</dd>
+				</dl>
+				<dl>
+					<dt>支付配送</dt>
+					<dd>支付方式</dd>
+					<dd>配送范围</dd>
+					<dd>配送时间</dd>
+					<dd>购物卡</dd>
+				</dl>
+				<dl>
+					<dt>会员中心</dt>
+					<dd>会员等级</dd>
+					<dd>会员权益</dd>
+					<dd>幸福金</dd>
+					<dd>找回密码</dd>
+				</dl>
+				<dl>
+					<dt>售后服务</dt>
+					<dd>售后服务政策</dd>
+					<dd>特色服务</dd>
+					<dd>先行赔付</dd>
+					<dd>权威监督</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="content">
+				<ul class="u1">
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">招商合作</a></li>
+					<li><a href="javascript:;">关于央广购物</a></li>
+					<li><a href="javascript:;">联系我们</a></li>
+					<li><a href="javascript:;">成为供应商</a></li>
+					<li><a href="javascript:;">招贤纳士</a></li>
+				</ul>
+				<ul class="u2">
+					<li><a href="javascript:;">京公网安备：11011502002190</a></li>
+					<li><a href="javascript:;">京ICP备10038858号</a></li>
+					<li><a href="javascript:;">食品流通许可证编号：SP1101151210063489</a></li>
+					<li><a href="javascript:;">信息网络传播视听节目许可证 0102002号</a></li>
+				</ul>
+				<p>Copyright©2010-2017 cnrmall.com All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务热线：4008-518-518</p><br />
+				<p><img src="../img/122.png" style="cursor: pointer;"/></p>
+			</div>
+		</div>
+		
+		<div id="cartAlert">
+			<a href="javascript:;" id="cartAlertOut">×</a>
+			<p>您已添加<span id="cartAlertNum" style="color: red;">0</span>件商品，共计<span id="cartAlertMoney" style="color: red;">0</span>元</p>
+			<p><a href="../goods-cart/index.html" id="goCart">查看购物车</a><a id="cartAlertOut1" href="javascript:;">再逛逛</a></p>
+		</div>
+	</body>
+</html>
